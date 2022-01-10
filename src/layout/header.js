@@ -5,9 +5,9 @@ const Header = {
   print() {
     return /* html */`
       <div class="bg-[#272f54] py-4">
-        <a href="#">
+
           ${Logo.print()}
-        </a>
+        
       </div>
       <div class="flex bg-[#ca7802] h-[50px]">
         <div  class="px-2">
