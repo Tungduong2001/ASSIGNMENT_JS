@@ -3,7 +3,7 @@ import Menu from "../components/menu";
 import Search from "../components/search";
 const Header = {
   print() {
-    return /* html */`
+    return /*html*/`
       <div class="bg-[#272f54] py-4">
         <a href="#">
           ${Logo.print()}
@@ -16,8 +16,7 @@ const Header = {
         <div class="py-3 pl-[80px]">
           ${Search.print()}
         </div>
-      </div>
-        `;
+      </div> `;
   },
 };
 export default Header;
