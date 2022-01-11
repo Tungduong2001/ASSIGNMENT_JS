@@ -3,25 +3,25 @@ import HomePage from "./pages/home";
 import Footer from "./layout/footer";
 import Header from "./layout/header";
 import NewsPage from "./pages/news";
+import DetailNewsPage from "./pages/detailPage";
 const router = new Navigo("/", { linksSelector: "a" });
 
-const render = (header, content, footer) => {
-    document.getElementById("header").innerHTML = header.print();
-    document.getElementById("content").innerHTML = content.print();
-    document.getElementById("footer").innerHTML = footer.print();
+const render = (content) => {
+    document.getElementById("header").innerHTML = Header.print();
+    document.getElementById("content").innerHTML = content;
+    document.getElementById("footer").innerHTML = Footer.print();
 }
 
-const about_render = (header, content, footer) => {
-    document.getElementById("header").innerHTML = header.print();
-    document.getElementById("content").innerHTML = content.print();
-    document.getElementById("footer").innerHTML = footer.print();
-}
 router.on({
     "/": () => {
-        render(Header, HomePage, Footer);
+        render(HomePage.print());
     },
     "/news": () => {
-        about_render(Header, NewsPage, Footer);
-    }
+        render(NewsPage.print());
+    },
+    "/news/:id": ({ data }) => {
+        const { id } = data;
+        render(DetailNewsPage.print(id));
+    },
 });
 router.resolve();
