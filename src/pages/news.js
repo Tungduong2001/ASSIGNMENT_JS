@@ -1,4 +1,4 @@
-import NewList from "../components/newList"
+import NewList from "../components/newList";
 
 const NewsPage = {
     print() {

@@ -1,6 +1,5 @@
 import Banner from "../components/banner";
 import NewList from "../components/newList";
-import Logo from "../components/logo";
 const HomePage = {
     print() {
         return /* html */`
