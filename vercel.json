@@ -2,39 +2,39 @@
     "routes": [
         {
             "src": "/",
-            "desc": "/"
+            "dest": "/"
         },
         {
             "src": "/news",
-            "desc": "/"
+            "dest": "/"
         },
         {
             "src": "/news/(.*)",
-            "desc": "/"
+            "dest": "/"
         },
         {
             "src": "/signin",
-            "desc": "/"
+            "dest": "/"
         },
         {
             "src": "/signup",
-            "desc": "/"
+            "dest": "/"
         },
         {
             "src": "/admin/dashboard",
-            "desc": "/"
+            "dest": "/"
         },
         {
             "src": "/admin/news",
-            "desc": "/"
+            "dest": "/"
         },
         {
             "src": "/admin/news/add",
-            "desc": "/"
+            "dest": "/"
         },
         {
             "src": "/admin/news/edit/(.*)",
-            "desc": "/"
+            "dest": "/"
         }
     ]
 }
