@@ -38,7 +38,7 @@ const Signup = {
                 </button>
                 </div>
                 <div class="text-center">
-                    <p>Do you already have an account?<a href="/signin " class="text-blue-600"> Sign in</a></p>
+                    <p>Do you already have an account?<a href="/signup" class="text-blue-600"> Sign up</a></p>
                 </div>
             </form>
             </div>
