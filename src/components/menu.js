@@ -7,7 +7,7 @@ const Menu = {
         <li class="block leading-[50px] hover:bg-indigo-600 hover:text-white "><a class="px-4" href="">Chương trình đào
             tạo</a></li>
         <li class="block leading-[50px] hover:bg-indigo-600 hover:text-white "><a class="px-4" href="/news">Tin tức</a></li>
-        <li class="block leading-[50px] hover:bg-indigo-600 hover:text-white "><a class="px-4" href="">Tuyển dụng</a></li>
+        <li class="block leading-[50px] hover:bg-indigo-600 hover:text-white "><a class="px-4" href="/signin">Đăng nhập</a></li>
         </ul>
         `;
     }
