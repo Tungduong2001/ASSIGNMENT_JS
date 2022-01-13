@@ -1,0 +1,40 @@
+{
+    "routes": [
+        {
+            "src": "/",
+            "desc": "/"
+        },
+        {
+            "src": "/news",
+            "desc": "/"
+        },
+        {
+            "src": "/news/(.*)",
+            "desc": "/"
+        },
+        {
+            "src": "/signin",
+            "desc": "/"
+        },
+        {
+            "src": "/signup",
+            "desc": "/"
+        },
+        {
+            "src": "/admin/dashboard",
+            "desc": "/"
+        },
+        {
+            "src": "/admin/news",
+            "desc": "/"
+        },
+        {
+            "src": "/admin/news/add",
+            "desc": "/"
+        },
+        {
+            "src": "/admin/news/edit/(.*)",
+            "desc": "/"
+        }
+    ]
+}
