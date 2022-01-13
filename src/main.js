@@ -12,7 +12,7 @@ import Newsadd from "./admin/newsadd";
 import HeaderDashboard from "./admin/header";
 import Newsedit from "./admin/newsedit";
 
-const router = new Navigo("/");
+const router = new Navigo("/", { linksSelector: "a" });
 
 const render = (content) => {
     document.getElementById("header").innerHTML = Header.print();
