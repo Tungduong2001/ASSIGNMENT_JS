@@ -2,8 +2,8 @@ import Logo from "../components/logo";
 import Menu from "../components/menu";
 import Search from "../components/search";
 const Header = {
-  print() {
-    return /*html*/`
+    print() {
+        return /*html*/`
       <div class="bg-[#272f54] py-4">
         <a href="#">
           ${Logo.print()}
@@ -17,7 +17,7 @@ const Header = {
           ${Search.print()}
         </div>
       </div> `;
-  },
+    },
 };
 
 export default Header;
