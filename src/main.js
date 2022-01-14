@@ -1,7 +1,5 @@
 import Navigo from "navigo";
 import HomePage from "./pages/home";
-import Footer from "./layout/footer";
-import Header from "./layout/header";
 import NewsPage from "./pages/news";
 import DetailNewsPage from "./pages/detailPage";
 import Signin from "./signin/signin";
@@ -9,15 +7,15 @@ import Signup from "./signin/signup";
 import News from "./admin/news";
 import Dashboard from "./admin/dashboard";
 import Newsadd from "./admin/newsadd";
-import HeaderDashboard from "./admin/header";
+
 import Newsedit from "./admin/newsedit";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
 const render = (content) => {
-    document.getElementById("header").innerHTML = Header.print();
+
     document.getElementById("content").innerHTML = content;
-    document.getElementById("footer").innerHTML = Footer.print();
+
 };
 
 const signin = (content) => {
@@ -25,7 +23,6 @@ const signin = (content) => {
 };
 
 const admin = (content) => {
-    document.getElementById("header").innerHTML = HeaderDashboard.print();
     document.getElementById("content").innerHTML = content;
 };
 router.on({

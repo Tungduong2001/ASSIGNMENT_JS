@@ -1,7 +1,10 @@
 import LearningData from "../data";
+import HeaderDashboard from "./header";
 const News = {
     print() {
         return /* html */ `
+        <div class="max-w-5xl m-auto">
+            ${HeaderDashboard.print()}
             <div class="flex flex-col">
             <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -58,7 +61,7 @@ const News = {
             </div>
             </div>
             </div>
-
+        </div>
         `;
     },
 };

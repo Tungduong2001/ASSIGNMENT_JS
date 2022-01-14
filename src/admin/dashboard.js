@@ -1,9 +1,13 @@
+import HeaderDashboard from "./header";
+
 const Dashboard = {
     print() {
         return /* html */ `
+        <div class="max-w-5xl m-auto">
             <div class="min-h-full">
             
-        
+            ${HeaderDashboard.print()}
+            
             <header class="bg-white shadow">
             <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                 <h1 class="text-3xl font-bold text-gray-900">
@@ -20,7 +24,9 @@ const Dashboard = {
                 <!-- /End replace -->
             </div>
             </main>
+            </div>
         </div>
+           
         `;
     },
 };

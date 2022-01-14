@@ -1,8 +1,11 @@
 import LearningData from "../data";
+import HeaderDashboard from "./header";
 const Newsedit = {
     print(id) {
         const result = LearningData.find((data) => data.id === id);
         return /*html*/ `
+        <div class="max-w-5xl m-auto">
+            ${HeaderDashboard.print()}
             <div> 
             <div class="mt-5 md:mt-0 md:col-span-2">
                 <form action="" method="POST">
@@ -48,9 +51,10 @@ const Newsedit = {
             </div>
         </div>
         
-        <div class="hidden sm:block" aria-hidden="true">
-            <div class="py-5">
-            <div class="border-t border-gray-200"></div>
+            <div class="hidden sm:block" aria-hidden="true">
+                <div class="py-5">
+                <div class="border-t border-gray-200"></div>
+                </div>
             </div>
         </div>
         `;
