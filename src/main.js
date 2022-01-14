@@ -7,7 +7,6 @@ import Signup from "./signin/signup";
 import News from "./admin/news";
 import Dashboard from "./admin/dashboard";
 import Newsadd from "./admin/newsadd";
-
 import Newsedit from "./admin/newsedit";
 
 const router = new Navigo("/", { linksSelector: "a" });

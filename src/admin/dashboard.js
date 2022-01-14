@@ -3,7 +3,6 @@ import HeaderDashboard from "./header";
 const Dashboard = {
     print() {
         return /* html */ `
-        <div class="max-w-5xl m-auto">
             <div class="min-h-full">
             
             ${HeaderDashboard.print()}
@@ -25,7 +24,6 @@ const Dashboard = {
             </div>
             </main>
             </div>
-        </div>
            
         `;
     },
